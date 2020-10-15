@@ -1,5 +1,5 @@
 <?php
-$file = "chat.txt";
+$file = "../date/chat.txt";
 file($file,FILE_IGNORE_NEW_LINES);
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
   $message = (string)filter_input(INPUT_POST, "message");
