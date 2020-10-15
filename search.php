@@ -1,6 +1,6 @@
 <?php
-$name = $_GET["name"];
-
+// $name = $_GET["name"];
+$name = (string)filter_input(INPUT_GET, "name");
 $names = file("names1.txt", FILE_IGNORE_NEW_LINES);
 
 $searched_names = [];
@@ -32,3 +32,4 @@ if ($name !== "") {
   </ul>
 </body>
 </html>
+
